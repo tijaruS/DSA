@@ -11,6 +11,8 @@ int main() {
             if ((m / i) != i)
                 cnt++;
         }
+        if (cnt > 2)
+            break;
     }
     if (cnt == 2)
         std::cout << "Prime Number" << std::endl;

@@ -79,5 +79,9 @@ int main() {
     std::cout << "has: " << hascs3233 << std::endl;
     std::cout << "Is there cs3233 in this string? "
               << (hascs3233 ? "Yes" : "No") << std::endl;
+    char c;
+    while (scanf("%c", &c), c != '\n') {
+    }
+
     return 0;
 }

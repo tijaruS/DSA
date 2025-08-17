@@ -2,10 +2,12 @@
 // This is for 0 based indexing graph for one based indexing take adj list of
 // size n+1
 std::vector<int> BFS(int numNode, std::vector<int> adj[], int startingNode) {
+
     std::queue<int> q;
     std::vector<int> vis(numNode, 0);
     std::vector<int> ans;
     vis[startingNode] = 1;
+    
     q.push(startingNode);
 
     while (!q.empty()) {
